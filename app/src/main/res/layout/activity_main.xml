@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.wang280727.customview.RCRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorWhite"
+        app:clip_background="true"
+        app:round_corner="10dp"
+        app:stroke_color="@color/colorLine"
+        app:stroke_width="1dp">
+
+        <com.wang280727.customview.RCImageView
+            android:id="@+id/iv_head_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/head_image"
+            app:round_as_circle="true"
+            app:stroke_color="@color/colorLine"
+            app:stroke_width="2dp" />
+
+        <com.wang280727.customview.RCImageView
+            android:id="@+id/iv_head_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head_1"
+            android:src="@mipmap/head_image"
+            app:round_as_circle="true" />
+
+        <com.wang280727.customview.RCImageView
+            android:id="@+id/iv_head_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_head_2"
+            android:src="@mipmap/head_image"
+            app:round_corner_bottom_left="15dp"
+            app:round_corner_top_right="15dp" />
+    </com.wang280727.customview.RCRelativeLayout>
+
+    <com.wang280727.customview.RCRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorWhite"
+        app:clip_background="true"
+        app:round_corner="10dp">
+
+        <com.wang280727.customview.SettingDescriptionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:description_Text="西藏自治区阿里地区札达县托林镇"
+            app:left_icon="@mipmap/head_image"
+            app:left_icon_corner="as_circle"
+            app:right_icon="@mipmap/right_icon"
+            app:title_Text="张桂花" />
+    </com.wang280727.customview.RCRelativeLayout>
+
+    <com.wang280727.customview.RCRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorWhite"
+        app:clip_background="true"
+        app:round_corner="15dp">
+
+        <com.wang280727.customview.PasswordEditView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:clear_icon="@mipmap/icon_del"
+            app:eye_close_icon="@mipmap/icon_close_eye"
+            app:eye_open_icon="@mipmap/icon_open_eye"
+            app:left_icon="@mipmap/icon_head">
+
+        </com.wang280727.customview.PasswordEditView>
+    </com.wang280727.customview.RCRelativeLayout>
+
+
+</LinearLayout>
